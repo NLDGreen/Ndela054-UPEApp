@@ -15,6 +15,7 @@
 		7003796A24D3E702004DC395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7003796824D3E702004DC395 /* LaunchScreen.storyboard */; };
 		7003797524D3E702004DC395 /* Ndela054_UPEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797424D3E702004DC395 /* Ndela054_UPEAppTests.swift */; };
 		7003798024D3E702004DC395 /* Ndela054_UPEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */; };
+		7003798E24D3E7EC004DC395 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003798D24D3E7EC004DC395 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7003797B24D3E702004DC395 /* Ndela054-UPEAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ndela054-UPEAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ndela054_UPEAppUITests.swift; sourceTree = "<group>"; };
 		7003798124D3E702004DC395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7003798D24D3E7EC004DC395 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7003795F24D3E701004DC395 /* FirstViewController.swift */,
 				7003796124D3E701004DC395 /* SecondViewController.swift */,
 				7003796324D3E701004DC395 /* Main.storyboard */,
+				7003798D24D3E7EC004DC395 /* ThirdViewController.swift */,
 				7003796624D3E702004DC395 /* Assets.xcassets */,
 				7003796824D3E702004DC395 /* LaunchScreen.storyboard */,
 				7003796B24D3E702004DC395 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				7003796224D3E701004DC395 /* SecondViewController.swift in Sources */,
 				7003795E24D3E701004DC395 /* AppDelegate.swift in Sources */,
+				7003798E24D3E7EC004DC395 /* ThirdViewController.swift in Sources */,
 				7003796024D3E701004DC395 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
