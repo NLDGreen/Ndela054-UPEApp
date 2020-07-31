@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7003795E24D3E701004DC395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003795D24D3E701004DC395 /* AppDelegate.swift */; };
-		7003796024D3E701004DC395 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003795F24D3E701004DC395 /* FirstViewController.swift */; };
-		7003796224D3E701004DC395 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003796124D3E701004DC395 /* SecondViewController.swift */; };
+		7003796024D3E701004DC395 /* ProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003795F24D3E701004DC395 /* ProgramViewController.swift */; };
+		7003796224D3E701004DC395 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003796124D3E701004DC395 /* CalendarViewController.swift */; };
 		7003796524D3E701004DC395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7003796324D3E701004DC395 /* Main.storyboard */; };
 		7003796724D3E702004DC395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7003796624D3E702004DC395 /* Assets.xcassets */; };
 		7003796A24D3E702004DC395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7003796824D3E702004DC395 /* LaunchScreen.storyboard */; };
 		7003797524D3E702004DC395 /* Ndela054_UPEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797424D3E702004DC395 /* Ndela054_UPEAppTests.swift */; };
 		7003798024D3E702004DC395 /* Ndela054_UPEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */; };
-		7003798E24D3E7EC004DC395 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003798D24D3E7EC004DC395 /* ThirdViewController.swift */; };
+		7003798E24D3E7EC004DC395 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003798D24D3E7EC004DC395 /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 /* Begin PBXFileReference section */
 		7003795A24D3E701004DC395 /* Ndela054-UPEApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ndela054-UPEApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7003795D24D3E701004DC395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7003795F24D3E701004DC395 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7003796124D3E701004DC395 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7003795F24D3E701004DC395 /* ProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewController.swift; sourceTree = "<group>"; };
+		7003796124D3E701004DC395 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		7003796424D3E701004DC395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7003796624D3E702004DC395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7003796924D3E702004DC395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		7003797B24D3E702004DC395 /* Ndela054-UPEAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ndela054-UPEAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ndela054_UPEAppUITests.swift; sourceTree = "<group>"; };
 		7003798124D3E702004DC395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7003798D24D3E7EC004DC395 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		7003798D24D3E7EC004DC395 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				7003795D24D3E701004DC395 /* AppDelegate.swift */,
-				7003795F24D3E701004DC395 /* FirstViewController.swift */,
-				7003796124D3E701004DC395 /* SecondViewController.swift */,
+				7003795F24D3E701004DC395 /* ProgramViewController.swift */,
+				7003796124D3E701004DC395 /* CalendarViewController.swift */,
 				7003796324D3E701004DC395 /* Main.storyboard */,
-				7003798D24D3E7EC004DC395 /* ThirdViewController.swift */,
+				7003798D24D3E7EC004DC395 /* ContactViewController.swift */,
 				7003796624D3E702004DC395 /* Assets.xcassets */,
 				7003796824D3E702004DC395 /* LaunchScreen.storyboard */,
 				7003796B24D3E702004DC395 /* Info.plist */,
@@ -262,10 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7003796224D3E701004DC395 /* SecondViewController.swift in Sources */,
+				7003796224D3E701004DC395 /* CalendarViewController.swift in Sources */,
 				7003795E24D3E701004DC395 /* AppDelegate.swift in Sources */,
-				7003798E24D3E7EC004DC395 /* ThirdViewController.swift in Sources */,
-				7003796024D3E701004DC395 /* FirstViewController.swift in Sources */,
+				7003798E24D3E7EC004DC395 /* ContactViewController.swift in Sources */,
+				7003796024D3E701004DC395 /* ProgramViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
