@@ -11,6 +11,8 @@ struct Contact
 {
     var name: String
     var email: String
+    var phoneNumber: String?
+    var role: String
 }
 
 // Protected database
@@ -18,9 +20,8 @@ final class ContactDB
 {
     static let sharedInstance = ContactDB()
     
-    private var contactList: [Contact] = [Contact(name: "Andrew", email:"andrew@hotmail.com"),
-                                          Contact(name: "Carlos",email:"carlos@gmail.com"),
-                                          Contact(name: "Giselle",email:"giselle@outlook.com")]
+    private var contactList: [Contact] = [Contact(name: "Matt Taylor", email: "", phoneNumber: "", role: "President"),
+                                          Contact(name: "Carlos Neira",email: "", phoneNumber: "", role: "Vice President")]
     
     var displayIndex = -1
     

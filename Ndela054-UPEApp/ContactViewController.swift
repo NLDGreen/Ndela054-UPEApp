@@ -12,11 +12,13 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
     
     // Implementing Model
     let myContacts = ContactDB.sharedInstance
-    var currentContact = Contact(name:"",email:"")
+    var currentContact = Contact(name:"",email:"",phoneNumber:"",role:"")
     
     // Outlet text fields
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var phoneNumberField: UITextField!
+    @IBOutlet var roleTextField: UITextField!
     
     // Override
     override func viewDidLoad() {
@@ -25,6 +27,8 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
         currentContact = myContacts.nextContact()
         nameTextField.text = currentContact.name
         emailTextField.text = currentContact.email
+        phoneNumberField.text = currentContact.phoneNumber
+        roleTextField.text = currentContact.role
         
         
     }
@@ -48,24 +52,42 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
         // A new contact will be created
         let nameString: String? = nameTextField.text
         let emailString: String? = emailTextField.text
+        let phoneString: String? = phoneNumberField.text
+        let roleString: String? = roleTextField.text
         if let tempName = nameString
         {
             if let tempEmail = emailString
             {
-                if tempName == currentContact.name
+                if let tempPhone = phoneString
                 {
-                    if tempEmail == currentContact.email
+                    if let tempRole = roleString
                     {
-                        let redCol = UIColor.red
-                        nameTextField.layer.borderColor = redCol.cgColor
-                        nameTextField.layer.borderWidth = 1.0
-                        emailTextField.layer.borderColor = redCol.cgColor
-                        emailTextField.layer.borderWidth = 1.0
-                        return
+                        if tempName == currentContact.name
+                        {
+                            if tempEmail == currentContact.email
+                            {
+                                if tempPhone == currentContact.phoneNumber
+                                {
+                                    if tempRole == currentContact.role
+                                    {
+                                        let redCol = UIColor.red
+                                        nameTextField.layer.borderColor = redCol.cgColor
+                                        nameTextField.layer.borderWidth = 1.0
+                                        emailTextField.layer.borderColor = redCol.cgColor
+                                        emailTextField.layer.borderWidth = 1.0
+                                        phoneNumberField.layer.borderColor = redCol.cgColor
+                                        phoneNumberField.layer.borderWidth = 1.0
+                                        roleTextField.layer.borderColor = redCol.cgColor
+                                        roleTextField.layer.borderWidth = 1.0
+                                        return
+                                    }
+                                }
+                            }
+                        }
+                        let newContact: Contact = Contact(name: tempName, email: tempEmail, phoneNumber: tempPhone, role: tempRole )
+                        myContacts.addContact(new: newContact)
                     }
                 }
-                let newContact: Contact = Contact(name: tempName, email: tempEmail )
-                myContacts.addContact(new: newContact)
             }
         }
         
@@ -81,12 +103,20 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
         }
         let nameString: String? = nameTextField.text
         let emailString: String? = emailTextField.text
+        let phoneString: String? = phoneNumberField.text
+        let roleString: String? = roleTextField.text
         if let tempName = nameString
         {
             if let tempEmail = emailString
             {
-                currentContact = Contact(name: tempName, email: tempEmail )
-                myContacts.updateContact(modified: currentContact)
+                if let tempPhone = phoneString
+                {
+                    if let tempRole = roleString
+                    {
+                        currentContact = Contact(name: tempName, email: tempEmail, phoneNumber: tempPhone, role: tempRole )
+                        myContacts.updateContact(modified: currentContact)
+                    }
+                }
             }
         }
         
@@ -100,8 +130,12 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
         currentContact = myContacts.nextContact()
         nameTextField.text = currentContact.name
         emailTextField.text = currentContact.email
+        phoneNumberField.text = currentContact.phoneNumber
+        roleTextField.text = currentContact.role
         emailTextField.layer.borderWidth = 0
         nameTextField.layer.borderWidth = 0
+        phoneNumberField.layer.borderWidth = 0
+        roleTextField.layer.borderWidth = 0
         
     }
     
@@ -112,8 +146,12 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
         currentContact = myContacts.prevContact()
         nameTextField.text = currentContact.name
         emailTextField.text = currentContact.email
+        phoneNumberField.text = currentContact.phoneNumber
+        roleTextField.text = currentContact.role
         emailTextField.layer.borderWidth = 0
         nameTextField.layer.borderWidth = 0
+        phoneNumberField.layer.borderWidth = 0
+        roleTextField.layer.borderWidth = 0
     }
     
     // Text field functions
