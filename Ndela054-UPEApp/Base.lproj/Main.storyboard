@@ -41,7 +41,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Programs" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +59,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="COH-7F-pcx" kind="relationship" relationship="viewControllers" id="Wpd-jb-1BU"/>
-                        <segue destination="C0x-zY-vSL" kind="relationship" relationship="viewControllers" id="9vO-hT-zlC"/>
+                        <segue destination="YLo-qm-hdz" kind="relationship" relationship="viewControllers" id="HzQ-kQ-pzO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -232,31 +232,24 @@
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
         <!--Calendar-->
-        <scene sceneID="4XA-tv-Jfu">
+        <scene sceneID="ABZ-g1-BeW">
             <objects>
-                <tableViewController title="Calendar" id="C0x-zY-vSL" customClass="CalendarViewController" customModule="Ndela054_UPEApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hom-XB-Z7Z">
+                <viewController title="Calendar" id="YLo-qm-hdz" customClass="CalendarViewController" customModule="Ndela054_UPEApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dV2-nQ-0BG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XQS-Jb-9WA">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XQS-Jb-9WA" id="WEw-o4-ZoP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="C0x-zY-vSL" id="vhm-d1-MWw"/>
-                            <outlet property="delegate" destination="C0x-zY-vSL" id="yoM-wc-gLf"/>
+                            <outlet property="dataSource" destination="YLo-qm-hdz" id="ndL-eL-NMs"/>
+                            <outlet property="delegate" destination="YLo-qm-hdz" id="g02-vN-5qV"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="mRS-SF-YKw"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jSG-rh-haZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" id="HeM-RQ-UfJ"/>
+                    <connections>
+                        <outlet property="view" destination="dV2-nQ-0BG" id="1Lh-Fg-HOQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxy-Yp-NoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

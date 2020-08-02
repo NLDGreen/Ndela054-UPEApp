@@ -16,6 +16,7 @@
 		7003797524D3E702004DC395 /* Ndela054_UPEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797424D3E702004DC395 /* Ndela054_UPEAppTests.swift */; };
 		7003798024D3E702004DC395 /* Ndela054_UPEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */; };
 		7003798E24D3E7EC004DC395 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7003798D24D3E7EC004DC395 /* ContactViewController.swift */; };
+		708FED0E24D65B39004FFAE6 /* CalendarTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708FED0D24D65B39004FFAE6 /* CalendarTableCell.swift */; };
 		70C59C7424D49EB300C55D90 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C59C7324D49EB300C55D90 /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		7003797F24D3E702004DC395 /* Ndela054_UPEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ndela054_UPEAppUITests.swift; sourceTree = "<group>"; };
 		7003798124D3E702004DC395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7003798D24D3E7EC004DC395 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		708FED0D24D65B39004FFAE6 /* CalendarTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableCell.swift; sourceTree = "<group>"; };
 		70C59C7324D49EB300C55D90 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				7003795D24D3E701004DC395 /* AppDelegate.swift */,
 				7003795F24D3E701004DC395 /* ProgramViewController.swift */,
 				7003796124D3E701004DC395 /* CalendarViewController.swift */,
+				708FED0D24D65B39004FFAE6 /* CalendarTableCell.swift */,
 				7003796324D3E701004DC395 /* Main.storyboard */,
 				70C59C7324D49EB300C55D90 /* Contacts.swift */,
 				7003798D24D3E7EC004DC395 /* ContactViewController.swift */,
@@ -267,6 +270,7 @@
 			files = (
 				7003796224D3E701004DC395 /* CalendarViewController.swift in Sources */,
 				7003795E24D3E701004DC395 /* AppDelegate.swift in Sources */,
+				708FED0E24D65B39004FFAE6 /* CalendarTableCell.swift in Sources */,
 				7003798E24D3E7EC004DC395 /* ContactViewController.swift in Sources */,
 				7003796024D3E701004DC395 /* ProgramViewController.swift in Sources */,
 				70C59C7424D49EB300C55D90 /* Contacts.swift in Sources */,
