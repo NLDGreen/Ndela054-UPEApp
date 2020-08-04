@@ -1,9 +1,9 @@
-//
-//  ThirdViewController.swift
-//  Ndela054-UPEApp
-//
-//  Created by user175850 on 7/31/20.
-//  Copyright © 2020 user175850. All rights reserved.
+// PROGRAMMER:  Nicholas Delamo
+// PANTHERID:   5278993
+// CLASS:       COP 465501 Online
+// INSTRUCTOR:  Steve Luis ECS 282
+// ASSIGNMENT:  Solo Project
+// DUE:         Monday 08/03/20
 //
 
 import UIKit
@@ -47,9 +47,6 @@ class ContactViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        // I could not figure out how to make the fields empty out on their own,
-        // But once you clear them, put in the new info and click new
-        // A new contact will be created
         let nameString: String? = nameTextField.text
         let emailString: String? = emailTextField.text
         let phoneString: String? = phoneNumberField.text
