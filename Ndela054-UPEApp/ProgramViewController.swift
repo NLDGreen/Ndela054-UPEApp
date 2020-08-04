@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
-class ProgramViewController: UIViewController {
+class ProgramViewController: UIViewController, WKNavigationDelegate {
 
+    var webView: WKWebView!
+    
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let url = URL(string: "https://upe.cs.fiu.edu")!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
     }
 
 
